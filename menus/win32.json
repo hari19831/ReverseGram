@@ -1,0 +1,119 @@
+{
+  "menu": [
+    {
+      "label": "&File",
+      "submenu": [
+        {
+          "label": "E&xit",
+          "command": "application:quit",
+          "accelerator": "Alt+F4"
+        }
+      ]
+    },
+    {
+      "label": "&Edit",
+      "submenu": [
+        {
+          "label": "&Undo",
+          "command": "core:undo",
+          "accelerator": "Control+Z"
+        },
+        {
+          "label": "&Redo",
+          "command": "core:redo",
+          "accelerator": "Control+Y"
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "label": "&Cut",
+          "command": "core:cut",
+          "accelerator": "Control+X"
+        },
+        {
+          "label": "C&opy",
+          "command": "core:copy",
+          "accelerator": "Control+C"
+        },
+        {
+          "label": "&Paste",
+          "command": "core:paste",
+          "accelerator": "Control+V"
+        },
+        {
+          "label": "Select &All",
+          "command": "core:select-all",
+          "accelerator": "Control+A"
+        }
+      ]
+    },
+    {
+      "label": "&View",
+      "submenu": [
+        {
+          "label": "&Reload",
+          "command": "window:reload",
+          "accelerator": "Control+R",
+          "visible": true
+        },
+        {
+          "label": "Toggle &Full Screen",
+          "command": "window:toggle-full-screen",
+          "accelerator": "Control+Shift+F"
+        },
+        {
+          "label": "Run Tests...",
+          "command": "application:run-specs",
+          "accelerator": "Alt+Command+T",
+          "visible": false
+        },
+        {
+          "label": "Toggle Developer Tools",
+          "command": "window:toggle-dev-tools",
+          "accelerator": "Alt+Command+I",
+          "visible": false
+        }
+      ]
+    },
+    {
+      "label": "&Help",
+      "submenu": [
+        {
+          "label": "VERSION",
+          "enabled": false
+        },
+        {
+          "label": "Restart and Install Update",
+          "command": "application:install-update",
+          "visible": false
+        },
+        {
+          "label": "Check for Update",
+          "command": "application:check-for-update",
+          "visible": false
+        },
+        {
+          "label": "Checking for Update",
+          "enabled": false,
+          "visible": false
+        },
+        {
+          "label": "Downloading Update",
+          "enabled": false,
+          "visible": false
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "label": "Report Issue",
+          "command": "application:report-issue"
+        },
+        {
+          "type": "separator"
+        }
+      ]
+    }
+  ]
+}
